@@ -1,0 +1,29 @@
+header {
+  padding: 70px calc(7.5%) 0 calc(7.5%);
+  border-bottom: 4px solid $light-blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  div.header--region {
+    width: 50%;
+
+    @include responsive("900px") {
+      width: 100%;
+    }
+
+    img.logo {
+      max-width: 100%;
+      margin-bottom: 35px;
+      height: auto;
+    }
+
+    div#block-umsi-search {
+      width: calc(50% - 150px);
+      display: inline-block;
+      margin-right: 20px;
+      text-align: right;
+    }
+  }
+}

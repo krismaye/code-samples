@@ -1,0 +1,147 @@
+/* Main */
+
+body {
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Sans-serif";
+  line-height: 24px;
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* Header */
+
+header {
+  background-color: rgba(128,128,128,0.9);
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  z-index: 10;
+  opacity: 0;
+}
+
+
+/* Navigation */
+
+nav {
+  font-family: "Open Sans", "Helvetica", sans-serif;
+  padding: 15px;
+  float: right;
+}
+
+nav ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  padding: 10px 30px;
+  margin-bottom: 0;
+  list-style: none;
+  font-size: 16px;
+}
+
+nav li a {
+  color: #FFFFFF;
+}
+
+nav li a.active {
+  font-weight: bold;
+}
+
+
+/* Headings */
+
+h1 {
+  font-family: "Zilla Slab", "Times New Roman", serif;
+  text-align: center;
+}
+
+h1.home {
+  display: none;
+}
+
+h2 {
+  font-family: "Zilla Slab", "Times New Roman", serif;
+  border-bottom: 1px solid #666666;
+  display: inline-block;
+  padding-bottom: 10px;
+  font-weight: normal;
+  font-size: 24px;
+  color: #666666;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+h2.index {
+  margin-bottom: 30px;
+}
+
+h2.projects {
+  width: 85px;
+  display: block;
+  margin: 30px auto 0 auto;
+}
+
+h2.empty {
+  margin-top: 60px;
+  text-align: center;
+  display: block;
+  border: 0;
+}
+
+
+/* Text */
+
+.subtitle {
+  font-size: 16px;
+  color: #666666;
+  margin: 5px 0;
+}
+
+.caption {
+  font-family: "Zilla Slab", "Times New Roman", serif;
+  text-align: center;
+  font-size: 14px;
+  color: #666666;
+}
+
+
+/* Links */
+
+a {
+  color: #427A9F;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #752C4A;
+}
+
+
+/* Lists */
+
+li {
+  margin-bottom: 15px;
+}
+
+
+/* Footer */
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+footer img {
+  padding: 10px;
+  width: 35px;
+}
+
+.footer-links {
+  margin: 0 auto;
+  width: 175px;
+}

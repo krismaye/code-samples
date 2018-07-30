@@ -1,0 +1,19 @@
+name: sample
+type: theme
+base theme: stable
+package: Custom
+core: 8.x
+
+libraries:
+- sample/global-styling
+- sample/fonts
+
+regions:
+  header_left: Header Left
+  header_right: Header Right
+  menu: Menu
+  breadcrumb: Breadcrumb
+  content: Content
+  footer_left: Footer Left
+  footer_center: Footer Center
+  footer_right: Footer Right

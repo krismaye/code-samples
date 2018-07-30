@@ -1,0 +1,66 @@
+// homepage buttons
+.buttons {
+  @extend %center-layout;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+
+.button {
+  width: 45%;
+  height: 80px;
+  margin-bottom: 1em;
+
+  @include responsive("900px") {
+    width: 100%;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  &:first-child {
+    background-color: $dark-blue;
+
+    .button--emphasis,
+    .button--text {
+      color: $yellow;
+    }
+  }
+
+  &:last-child {
+    background-color: $yellow;
+
+    .button--emphasis,
+    .button--text {
+      color: $dark-blue;
+    }
+  }
+
+  .button--link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button--image {
+    height: 80px;
+    margin-right: 0.25em;
+  }
+
+  .button--emphasis {
+    display: inline-block;
+    font-size: $base-font-size * 2.25;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 0.25em;
+  }
+
+  .button--text {
+    display: inline-block;
+    font-size: $base-font-size * 1.75;
+    text-transform: uppercase;
+    margin: 0;
+  }
+}

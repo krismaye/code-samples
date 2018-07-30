@@ -1,0 +1,175 @@
+/* Landing Screen */
+
+.landing {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/index.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.intro {
+  padding-top: 100px;
+}
+
+.logo {
+  width: 200px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.words {
+  font-family: "Zilla Slab", "Times New Roman", serif;
+  font-size: 52px;
+  line-height: 100%;
+  text-align: center;
+  color: #444444;
+}
+
+.words p {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0;
+}
+
+
+/* Education & Experience Cards */
+
+.info {
+  justify-content: center;
+  padding-top: 100px;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.education,
+.experience {
+  display: inline-block;
+  margin-bottom: 40px;
+  padding: 35px;
+  padding-bottom: 25px;
+  width: 500px;
+}
+
+.education {
+  border-right: 1px solid #666666;
+}
+
+.resume-link {
+  font-size: 14px;
+}
+
+
+/* Entry */
+
+.main {
+  display: inline-block;
+  width: 100%;
+}
+
+.entry {
+  display: inline-block;
+  margin-bottom: 40px;
+  width: 100%;
+  clear: left;
+  float: left;
+}
+
+.entry:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Entry Details */
+
+.title {
+  display: inline-block;
+  font-weight: bold;
+  margin: 0;
+}
+
+.dates {
+  float: right;
+  width: 140px;
+  font-size: 14px;
+  color: #752C4A;
+  text-align: right;
+  margin: 0;
+}
+
+.place {
+  font-size: 14px;
+  margin: 0;
+}
+
+
+/* Portfolo */
+
+.projects-container {
+  padding: 40px calc((100% - 860px)/2);
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.project {
+  position: relative;
+  background-color: #FFFFFF;
+  filter: grayscale(100%);
+  height: 100px;
+  width: 200px;
+  padding: 20px;
+  margin: 20px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.3);
+}
+
+.project-logo {
+  vertical-align: middle;
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+}
+
+.project:hover {
+  filter: none;
+}
+
+.project-logo-align {
+  vertical-align: middle;
+  display: inline-block;
+  height: 25px;
+}
+
+/*  Overlay  */
+
+.overlay {
+  background: #000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  padding: 0;
+}
+
+.overlay p {
+  font-family: "Zilla Slab", "Times New Roman", serif;
+  text-align: center;
+  margin-top: 100px;
+  color: white;
+}
+
+.overlay:hover {
+  opacity: .7;
+}

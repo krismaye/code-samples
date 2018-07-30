@@ -1,0 +1,291 @@
+/* Fade in screen */
+
+@keyframes fadeIn { from { top:-200px; opacity:0; } to { top: 500px; opacity:1; } }
+
+.fade-in {
+  width: 950px;
+  margin: 0 auto;
+  opacity:0;
+  animation:fadeIn ease-in 1;
+  animation-fill-mode:forwards;
+  animation-duration:1s;
+  animation-delay: 0.5s;
+}
+
+
+/* Close X */
+
+.return {
+  text-align: right;
+  margin-top: 50px;
+}
+
+.return a {
+  font-size: 42px;
+  color: #666666;
+}
+
+
+/* Split Column */
+
+.info {
+  justify-content: center;
+  padding-top: 50px;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.left,
+.right {
+  display: inline-block;
+  margin-bottom: 25px;
+  max-width: 100%;
+  padding: 25px;
+  width: 425px;
+}
+
+
+/* Callouts */
+
+.big-point {
+  background-color: #EEEEEE;
+  text-align: center;
+  padding: 45px;
+  margin-bottom: 50px;
+}
+
+.goal {
+  font-family: "Zilla Slab", "Times New Roman", serif;
+  line-height: 36px;
+  margin-bottom: 0;
+  font-size: 24px;
+}
+
+
+/* Timeline */
+
+.timeline {
+  border-bottom: 2px solid #EEEEEE;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  display: block;
+  width: 500px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.timeline h2 {
+  margin: 0 auto 20px auto;
+  text-align: center;
+  display: block;
+  width: 90px;
+}
+
+.timeline div.months {
+  text-align: right;
+  font-weight: bold;
+  float: left;
+  width: 40%;
+}
+
+.timeline .items {
+  float: right;
+  width: 55%;
+}
+
+
+/* Image and Text Blocks */
+
+.image-right {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  display: flex;
+}
+
+.image-right.collapse-top {
+  padding-top: 0;
+}
+
+.image-right p:first-child {
+  margin-top: 0;
+}
+
+.text,
+.image {
+  display: inline-block;
+  max-width: 100%;
+  width: 450px;
+}
+
+.text {
+  padding-right: 25px;
+}
+
+.image {
+  padding-left: 25px;
+}
+
+.image-align {
+  vertical-align: middle;
+  display: inline-block;
+  height: 600px;
+}
+
+.image img {
+  vertical-align: middle;
+  display: inline-block;
+  margin: 0 auto;
+  width: 99%;
+}
+
+.image .double {
+  margin-top: 50px;
+}
+
+.above-image {
+  margin-bottom: 40px;
+}
+
+.full-image {
+  margin-bottom: 40px;
+}
+
+.full-image img {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+  width: 600px;
+}
+
+
+/* Full Width */
+
+.full {
+  width: 900px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.full.margin {
+  margin-top: 50px;
+}
+
+.full.prototypes {
+  margin-top: 25px;
+}
+
+.proto-images {
+  text-align: center;
+}
+
+.proto-images figure img {
+  height: 300px;
+  margin: 25px;
+}
+
+.project-details {
+  font-family: "Zilla Slab", "Times New Roman", serif;
+  text-align: center;
+  font-size: 14px;
+  color: #666666;
+  margin: 20px 0;
+}
+
+.project-details.caption {
+  margin-bottom: 16px;
+}
+
+.project-details.top {
+  margin-bottom: 50px;
+}
+
+
+/* Prototypes */
+
+.prototype {
+  margin: 0 auto;
+  width: 300px;
+}
+
+iframe {
+  border: 0;
+  display: block;
+  margin: 0 auto;
+}
+
+
+/* Image Gallery */
+
+.gallery-container {
+  margin: 50px auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+  width: 950px;
+}
+
+.image-gallery {
+  border: 1px solid #666666;
+  margin: 10px;
+  width: 180px;
+}
+
+.image-gallery:hover {
+  border: 1px solid #752C4A;
+}
+
+.image-gallery .caption {
+  margin: 10px;
+}
+
+.gallery-thumb {
+  width: 180px;
+}
+
+
+/* Inline images */
+
+.images {
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 950px;
+}
+
+.images figure {
+  max-width: 25%;
+  margin: 1em
+}
+
+.images figure img {
+  max-width: 100%;
+}
+
+
+/* Spacer */
+
+.spacer {
+  height: 50px;
+}
+
+
+/* Group of three */
+
+.group-of-three {
+  display: flex;
+}
+
+.third {
+  width: 33%;
+  padding: 10px;
+}
+
+.third:first-child {
+  padding-left: 0;
+}
+
+.third:last-child {
+  padding-right: 0;
+}

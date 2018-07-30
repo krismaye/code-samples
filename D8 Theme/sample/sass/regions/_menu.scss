@@ -1,0 +1,264 @@
+// homepage menu
+ul.menu--homepage  {
+  @extend %center-layout;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 3em;
+  list-style: none;
+  padding: 0;
+
+  li.menu--homepage--item {
+    width: 18%;
+    background-size: 100%;
+
+    @include responsive("900px") {
+      width: 100%;
+      margin-bottom: 2em;
+    }
+
+    &:first-child {
+      background-image: url("../images/recruit.png");
+
+      div.menu--homepage--item--title {
+        background-color: $red;
+      }
+
+      ul.menu--homepage--dropdown {
+        background-color: rgba($red, 0.8);
+      }
+    }
+
+    &:nth-child(2) {
+      background-image: url("../images/hire.png");
+
+      div.menu--homepage--item--title {
+        background-color: $purple;
+      }
+
+      ul.menu--homepage--dropdown {
+        background-color: rgba($purple, 0.8);
+      }
+    }
+
+    &:nth-child(3) {
+      background-image: url("../images/impress.png");
+
+      div.menu--homepage--item--title {
+        background-color: $teal;
+      }
+
+      ul.menu--homepage--dropdown {
+        background-color: rgba($teal, 0.8);
+      }
+    }
+
+    &:nth-child(4) {
+      background-image: url("../images/partner.png");
+
+      div.menu--homepage--item--title {
+        background-color: $olive;
+      }
+
+      ul.menu--homepage--dropdown {
+        background-color: rgba($olive, 0.8);
+      }
+    }
+
+    &:last-child {
+      background-image: url("../images/connect.png");
+
+      div.menu--homepage--item--title {
+        background-color: $orange;
+      }
+
+      ul.menu--homepage--dropdown {
+        background-color: rgba($orange, 0.8);
+      }
+    }
+
+    &:hover {
+
+      ul.menu--homepage--dropdown {
+        visibility: visible;
+
+        @include responsive("900px") {
+          visibility: hidden;
+        }
+      }
+    }
+
+    div.menu--homepage--item--title {
+      text-transform: uppercase;
+      text-align: center;
+      font-size: $base-font-size * 2;
+      padding: 0.5em;
+      color: $white;
+    }
+
+    ul.menu--homepage--dropdown {
+      list-style: none;
+      padding: 0;
+      visibility: hidden;
+
+      li.menu--homepage--dropdown--item {
+        padding: 1em;
+
+        a {
+          color: $white;
+          font-size: $base-font-size * 1.5;
+          font-weight: 700;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+
+// main menu
+ul.menu {
+  @extend %center-layout;
+  display: flex;
+  padding: 0;
+
+  @include responsive("900px") {
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+  @include responsive-min("900px") {
+    display: flex !important;
+  }
+
+  // top level menu items
+  li.menu--item {
+    width: 20%;
+    margin: 0 5px;
+    padding-top: 0;
+    text-align: center;
+    position: relative;
+    list-style: none;
+
+    &:first-child {
+
+      span {
+        background-color: $red;
+      }
+
+      ul {
+        background-color: rgba($red, 0.9);
+      }
+    }
+
+    &:nth-child(2) {
+
+      span {
+        background-color: $purple; }
+
+      ul {
+        background-color: rgba($purple, 0.9);
+      }
+    }
+
+    &:nth-child(3) {
+
+      span {
+        background-color: $teal; }
+
+      ul {
+        background-color: rgba($teal, 0.9);
+      }
+    }
+
+    &:nth-child(4) {
+
+      span {
+        background-color: $olive; }
+
+      ul {
+        background-color: rgba($olive, 0.9);
+      }
+    }
+
+    &:nth-child(5) {
+
+      span {
+        background-color: $orange; }
+
+      ul {
+        background-color: rgba($orange, 0.9);
+      }
+    }
+
+    span {
+      display: block;
+      padding: 10px 0;
+      color: $white;
+      font-size: 24px;
+      width: 100;
+      font-weight: 700;
+
+      @include responsive("900px") {
+        font-size: 18px;
+      }
+    }
+
+    @include responsive("900px") {
+      width: 100%;
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+      font-weight: 700;
+      color: $white;
+    }
+
+    // dropdown menus
+    ul.menu--dropdown {
+      padding: 10px 0 15px 0;
+      margin: 0;
+      position: absolute;
+      display: none;
+      z-index: 999;
+      width: 100%;
+
+      @include responsive("900px") {
+        position: static;
+        width: 100%;
+      }
+
+      li.menu--dropdown--item {
+        text-align: left;
+        padding: 5px 20px;
+        list-style: none;
+
+        @include responsive("900px") {
+          text-align: center;
+          padding: 5px 0;
+        }
+
+        a {
+          font-size: 20px;
+
+          @include responsive("900px") {
+            font-size: 16px; }
+        }
+      }
+    }
+
+    // display dropdowns on hover
+    &:hover {
+
+      ul {
+        display: block;
+
+        @include responsive("900px") {
+          display: none;
+        }
+      }
+    }
+  }
+}

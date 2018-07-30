@@ -1,0 +1,37 @@
+<?php
+
+/**
+ * Implements theme_preprocess_node() to add the main menu as a variable for the homepage.
+ */
+function sample_preprocess_node(&$variables) {
+  $menu_block = \Drupal\block\Entity\Block::load('theme_main_menu');
+  $menu_view = \Drupal::entityTypeManager()
+    ->getViewBuilder('block')
+    ->view($menu_block);
+  if ($menu_view) {
+    $variables['menu'] = $menu_view;
+  }
+}
+
+/**
+ * Implements theme_theme_suggestions_hook_alter() to add a theme suggestion for the homepage menu.
+ */
+function sample_theme_suggestions_menu_alter(array &$suggestions, array $variables) {
+  if ($variables['menu_name'] == 'main') {
+    $node = \Drupal::routeMatch()->getParameter('node');
+    $node_type = strtolower($node->getType());
+    $suggestions[] = 'menu__' . $node_type;
+  }
+}
+
+/**
+ * Implements theme_preprocess_breadcrumb() to add current page to breadcrumbs.
+ */
+function sample_preprocess_breadcrumb(&$variables) {
+  $request = \Drupal::request();
+  $route_match = \Drupal::routeMatch();
+  $current_page = \Drupal::service('title_resolver')->getTitle($request, $route_match->getRouteObject());
+  $variables['breadcrumb'][] = array(
+    'text' => $current_page
+  );
+}

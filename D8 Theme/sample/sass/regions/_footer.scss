@@ -1,0 +1,33 @@
+footer {
+  border-top: 4px solid $black;
+  background-color: $light-gray;
+  padding-top: 3em;
+
+  .footer--content {
+    @extend %center-layout;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .footer--region {
+      width: 25%;
+
+      @include responsive("900px") {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2em;
+      }
+
+      &:nth-child(2) {
+        img {
+          width: 100%;
+          height: auto;
+
+          @include responsive("900px") {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}

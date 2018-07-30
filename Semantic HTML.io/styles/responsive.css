@@ -1,0 +1,179 @@
+/*  Specific border change  */
+
+@media screen and (max-width: 1139px) {
+
+  .education {
+    border-right: none;
+    border-bottom: 1px solid #666666;
+    padding-bottom: 60px;
+  }
+}
+
+
+/*  Tablet Portrait & Landscape  */
+
+@media screen and (min-width : 769px) and (max-width : 1099px) {
+
+  .fade-in {
+    width: 500px;
+    max-width: 100%;
+  }
+
+  .education {
+    border-right: none;
+    border-bottom: 1px solid #666666;
+    padding-bottom: 60px;
+  }
+
+  .left, .right,
+  .text, .image,
+  .full {
+    width: 100%;
+    padding: 0;
+  }
+
+  .big-point {
+    padding: 35px 25px;
+  }
+
+  .image-right {
+    flex-wrap: wrap;
+    padding-top: 55px;
+    padding-bottom: 30px;
+  }
+
+  .image-right .text {
+    margin-bottom: 30px;
+  }
+
+  .image {
+    margin-bottom: 60px;
+  }
+
+  .image .image-align {
+    display: none;
+  }
+
+  .image .double {
+    margin-top: 20px;
+  }
+
+  .image-hide {
+    display: none;
+  }
+
+  .images {
+    width: 500px;
+  }
+
+  .images figure {
+    max-width: 100%;
+  }
+}
+
+
+/* Specific line splitting */
+
+@media screen and (max-width : 820px) {
+
+  .goal br {
+    display: none;
+  }
+}
+
+
+/*  Smartphone Portrait and Landscape  */
+
+@media screen and (max-width : 768px) {
+
+  .fade-in {
+    width: 500px;
+    max-width: 100%;
+  }
+
+  .education {
+    border-right: none;
+    border-bottom: 1px solid #666666;
+    padding-bottom: 60px;
+  }
+
+  .left, .right,
+  .text, .image,
+  .full {
+    width: 100%
+    padding: 0;
+  }
+
+  .big-point {
+    padding: 35px 25px;
+  }
+
+  .image-right {
+    flex-wrap: wrap;
+  }
+
+  .image-right .text {
+    margin-bottom: 30px;
+  }
+
+  .image {
+    margin-bottom: 60px;
+  }
+
+  .image .image-align {
+    display: none; }
+
+  .image .double {
+    margin-top: 20px; }
+
+  .full, .big-point,
+  .gallery-container,
+  .quick-intro-inner {
+    width: 500px;
+    max-width: calc(100% - 50px);
+  }
+
+  .full.prototypes {
+    margin-bottom: 35px;
+  }
+
+  .proto-images {
+    display: none;
+  }
+
+  .image-hide {
+    display: none;
+  }
+
+  .images {
+    width: 500px;
+  }
+
+  .images figure {
+    max-width: 100%;
+  }
+}
+
+
+/* Specific X change */
+
+@media screen and (max-width : 550px) {
+
+  .return {
+    text-align: center;
+  }
+}
+
+
+/* Specific navigation change */
+
+@media screen and (max-width : 390px) {
+
+  header {
+    height: auto;
+  }
+
+  nav {
+    text-align: center;
+  }
+}
